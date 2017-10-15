@@ -7,7 +7,7 @@ package uhack.contractor.model
 
 data class Contractor(val Name:String, val address:String,
                       val email:String, val mobile:Long, val contractorID:String,
-                      val skillType:Int, val workerIDs: ArrayList<String>)
+                      val skillType:Int, val workerIds: ArrayList<String>)
 
 
 data class ContractorTemp(val contractorId:String="", val amount:Int=0, val duration:Int=0,
