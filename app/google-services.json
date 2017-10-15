@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "860140766288",
+    "firebase_url": "https://builder-e46d9.firebaseio.com",
+    "project_id": "builder-e46d9",
+    "storage_bucket": "builder-e46d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860140766288:android:ddb3d4b9378e2494",
+        "android_client_info": {
+          "package_name": "com.uhack.builder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860140766288-35t7jntnu18q0b6ad9kmm1l98nib4co2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uhack.builder",
+            "certificate_hash": "22af515af9cc8f2c5c56ef4b6ad0528f35eb5b72"
+          }
+        },
+        {
+          "client_id": "860140766288-s9qtjcv97p3g0kn0nkkr32ivp689gkhf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uhack.builder",
+            "certificate_hash": "2c4d946461b3d0299aa7b0381cf274c550806cde"
+          }
+        },
+        {
+          "client_id": "860140766288-nmpic099rrhgn7q4quvqe266pt5mgi4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDszjp1E0k6IId1eFzk18lQWwW2Sotu-K8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860140766288-nmpic099rrhgn7q4quvqe266pt5mgi4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860140766288:android:cfc058049a619f19",
+        "android_client_info": {
+          "package_name": "uhack.contractor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860140766288-4ilii33sk1112in68kevvre491r3mp6b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "uhack.contractor",
+            "certificate_hash": "2c4d946461b3d0299aa7b0381cf274c550806cde"
+          }
+        },
+        {
+          "client_id": "860140766288-nmpic099rrhgn7q4quvqe266pt5mgi4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDszjp1E0k6IId1eFzk18lQWwW2Sotu-K8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860140766288-nmpic099rrhgn7q4quvqe266pt5mgi4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

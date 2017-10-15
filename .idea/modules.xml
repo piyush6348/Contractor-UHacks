@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Contractor.iml" filepath="$PROJECT_DIR$/Contractor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Contractor-UHacks.iml" filepath="$PROJECT_DIR$/Contractor-UHacks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
