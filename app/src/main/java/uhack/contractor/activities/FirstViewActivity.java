@@ -36,9 +36,11 @@ public class FirstViewActivity extends AppCompatActivity {
         superPrefs = new SuperPrefs(this);
 
         listOfProjectIDs = new ArrayList<>();
-        setUpAdapter();
 
-        FirebaseReference.contractorReference.child(superPrefs.getString(FirebaseLinks.CONTRACTOR_ID))
+        recyclerView = (RecyclerView) findViewById(R.id.rv_project_list);
+        setUpAdapter();
+           // superPrefs.getInt(FirebaseLinks.SKILL_TYPE,0)+
+        FirebaseReference.contractorReference.child("0").child(superPrefs.getString(FirebaseLinks.CONTRACTOR_ID))
                 .child("projectIDs").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {

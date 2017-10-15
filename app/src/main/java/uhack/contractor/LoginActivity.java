@@ -78,6 +78,9 @@ public class LoginActivity extends AppCompatActivity {
                             if (user!=null) {
                                 SuperPrefs.newInstance(LoginActivity.this).setString(FirebaseLinks.CONTRACTOR_ID,
                                         user.getUid());
+                                SuperPrefs.newInstance(LoginActivity.this).setInt(FirebaseLinks.SKILL_TYPE,
+                                        0);
+
                                 Log.d(TAG, "onComplete: " + user.getUid());
 
                                // HashMap<String, Builder> map = new HashMap<>();

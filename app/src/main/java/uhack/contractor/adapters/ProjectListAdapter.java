@@ -12,6 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import uhack.contractor.R;
+import uhack.contractor.activities.ProjectDetails;
 import uhack.contractor.model.Project;
 
 /**
@@ -36,9 +37,9 @@ public class ProjectListAdapter extends RecyclerView.Adapter<ProjectListAdapter.
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // Intent intent = new Intent(context, ProjectDetails.class);
-               // intent.putExtra("project-id", projectArrayList.get(vh.getAdapterPosition()).getProjectID());
-               // context.startActivity(intent);
+                Intent intent = new Intent(context, ProjectDetails.class);
+                intent.putExtra("project-id", projectArrayList.get(vh.getAdapterPosition()).getProjectID());
+                context.startActivity(intent);
                 //vh.getAdapterPosition();
             }
         });

@@ -11,4 +11,5 @@ public interface FirebaseLinks {
     String PROJECT_IDS="ProjectIDs";
     String CONTRACTOR_DATA="contractorData";
     String INVENTORY = "Inventory";
+    String SKILL_TYPE = "skillType";
 }

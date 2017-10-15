@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimary">
+
+        <EditText
+            android:id="@+id/et_inventory_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="1"
+            android:hint="Inventory Name"
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:textColor="@color/black" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/colorPrimary">
+
+        <EditText
+            android:id="@+id/et_inventory_qty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:ems="1"
+            android:lines="2"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:maxLines="4"
+            android:textColor="@color/black" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/btn_done"
+                android:background="@android:color/transparent"
+                android:textColor="@color/white"
+                android:text="Done"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
