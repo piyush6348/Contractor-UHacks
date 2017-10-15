@@ -17,5 +17,5 @@ data class ContractorTemp(val contractorId:String="", val amount:Int=0, val dura
 data class Transaction(val transactionID: String, val inventoryID: String,
                        val comment: String, val type:Int, val creatorID:String, val delta:Int)
 
-data class Worker(val contractorID: String, val workerID:String, val name: String,
-                   val mobile: String)
+data class Worker(val contractorID: String="", val workerID:String="", val name: String="",
+                   val mobile: Long=0)

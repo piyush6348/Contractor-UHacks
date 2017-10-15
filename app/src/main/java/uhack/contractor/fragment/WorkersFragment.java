@@ -86,7 +86,7 @@ public class WorkersFragment extends Fragment {
         workerList = new ArrayList<>();
         listOfWorkerIDs = new ArrayList<>();
 
-        recyclerView = (RecyclerView) view.findViewById(R.id.rv_project_list);
+        recyclerView = (RecyclerView) view.findViewById(R.id.rv_worker_list);
         setUpAdapter();
         SuperPrefs superPrefs = new SuperPrefs(getActivity());
         FirebaseReference.contractorReference.child("0").child(superPrefs.getString(FirebaseLinks.CONTRACTOR_ID))

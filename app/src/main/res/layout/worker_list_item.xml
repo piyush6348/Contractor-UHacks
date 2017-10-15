@@ -1,62 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<card_view:android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:contentPadding="10dp">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:weightSum="3"
         android:id="@+id/row_layout"
+        android:layout_width="match_parent"
         android:layout_height="72dp"
-        android:paddingTop="8dp"
+        android:orientation="horizontal"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:orientation="horizontal">
+        android:paddingTop="8dp"
+        android:weightSum="3">
 
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="vertical"
-            android:weightSum="3"
-            android:layout_height="match_parent">
+            android:weightSum="3">
 
             <TextView
                 android:id="@+id/tv_worker_name"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textStyle="bold"
-                android:hint="Worker Name"
-                android:textSize="15sp" />
+                android:hint="Hospital Name"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tv_mobile"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Mobile"
-                android:textSize="16sp"
-                android:id="@+id/tv_mobile"
-                android:layout_weight="2" />
+                android:layout_weight="2"
+                android:hint="Distance"
+                android:textSize="16sp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:clickable="true"
             android:layout_height="match_parent"
-            android:layout_weight="2">
+            android:layout_weight="2"
+            android:clickable="true">
 
             <ImageButton
                 android:id="@+id/ib_call"
-                android:paddingLeft="4dp"
-                android:background="@android:color/transparent"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:paddingLeft="4dp"
                 android:src="@drawable/ic_call_black_24dp" />
+            <ImageButton
+                android:id="@+id/ib_msg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:paddingLeft="4dp"
+                android:src="@drawable/ic_message_black_24dp" />
         </LinearLayout>
 
     </LinearLayout>
 
 
-</RelativeLayout>
+</card_view:android.support.v7.widget.CardView>

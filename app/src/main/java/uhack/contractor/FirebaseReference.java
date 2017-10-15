@@ -34,7 +34,7 @@ public class FirebaseReference extends Application {
         inventoryReference = database.getReference().child("Inventory");
         contractorReference = database.getReference().child("Contractor");
         transactionReference = database.getReference().child("Transaction");
-        workerReference  = database.getReference().child("Workers");
+        workerReference  = database.getReference().child("Worker");
 
 
     }

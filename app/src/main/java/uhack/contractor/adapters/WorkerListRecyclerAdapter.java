@@ -50,6 +50,13 @@ public class WorkerListRecyclerAdapter extends RecyclerView.Adapter<WorkerListRe
                 context.startActivity(callIntent);
             }
         });
+
+        hospitalViewHolder.ibMessage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
         return hospitalViewHolder;
     }
 
@@ -57,7 +64,7 @@ public class WorkerListRecyclerAdapter extends RecyclerView.Adapter<WorkerListRe
     public void onBindViewHolder(HospitalViewHolder holder, int position) {
 
         holder.tvHospitalName.setText(workerArrayList.get(position).getName());
-        holder.tvHospitalDistance.setText(workerArrayList.get(position).getMobile());
+        holder.tvHospitalDistance.setText(workerArrayList.get(position).getMobile()+"");
 
     }
 
@@ -70,7 +77,7 @@ public class WorkerListRecyclerAdapter extends RecyclerView.Adapter<WorkerListRe
 
         private TextView tvHospitalName,tvHospitalDistance;
         private LinearLayout rowLayout;
-        private ImageButton ib_call_btn;
+        private ImageButton ib_call_btn, ibMessage;
         public HospitalViewHolder(View itemView) {
             super(itemView);
 
@@ -78,6 +85,7 @@ public class WorkerListRecyclerAdapter extends RecyclerView.Adapter<WorkerListRe
             tvHospitalDistance = (TextView) itemView.findViewById(R.id.tv_mobile);
             rowLayout = (LinearLayout) itemView.findViewById(R.id.row_layout);
             ib_call_btn = (ImageButton) itemView.findViewById(R.id.ib_call);
+            ibMessage = itemView.findViewById(R.id.ib_msg);
         }
     }
 }
